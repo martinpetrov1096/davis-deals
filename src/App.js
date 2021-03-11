@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useMemo, useState } from 'react';
+import deals from './config/deals.json';
+import days from './config/days.json';
+import restaurants from './config/restaurants.json';
+import DailyDeal from './components/daily-deal';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+
+   const dailyDealDivs = useMemo(() => {
+      const dailyDeals = {};
+      for (const day of days) {
+         dailyDeals[day.toString()] = deals.filter((deal) => deal.day.includes(day));
+      }
+      return days.map((day) => {
+         return (
+            <DailyDeal day={day} deals={dailyDeals[day]} key={day}/>
+         );
+      });
+
+   }, []);
+
+   return (
+      <div className="App">
+         { dailyDealDivs }
+      </div>
+   );
 }
 
-export default App;
+/**
+ * 
+ * monday: [
+ *  nums.map((num) => return num * num);
+ * 
+  * ],
+  * "tuesday" : 
+ * 
+ */

@@ -1,0 +1,32 @@
+[
+   {
+      "id": 0,
+      "restaurantId": 0,
+      "day": ["wednesday"],
+      "category": "food",
+      "description": "Chicken Katsu w/ Medium Drink",
+      "price": "$7",
+      "timeStart": "2pm",
+      "timeEnd": "4pm"
+   },
+   {
+      "id": 1,
+      "restaurantId": 1,
+      "day": ["monday", "tuesday","wednesday", "thursday", "friday"],
+      "category": "food",
+      "description": "Student Discount Sandwich 50% Off",
+      "price": "NA",
+      "timeStart": "3pm",
+      "timeEnd": "5pm"
+   },
+   {
+      "id": 2,
+      "restaurantId": 2,
+      "day": ["wednesday"],
+      "category": "drink",
+      "description": "",
+      "price": "NA",
+      "timeStart": "8pm",
+      "timeEnd": "12am"
+   }
+]
