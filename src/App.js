@@ -1,8 +1,7 @@
-import { useEffect, useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import deals from './config/deals.json';
 import days from './config/days.json';
-import restaurants from './config/restaurants.json';
-import DailyDeal from './components/daily-deal';
+import DailyDeals from './components/daily-deals';
 
 
 export default function App() {
@@ -14,10 +13,9 @@ export default function App() {
       }
       return days.map((day) => {
          return (
-            <DailyDeal day={day} deals={dailyDeals[day]} key={day}/>
+            <DailyDeals day={day} deals={dailyDeals[day]} key={day}/>
          );
       });
-
    }, []);
 
    return (

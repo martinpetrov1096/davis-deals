@@ -6,6 +6,7 @@
       "category": "food",
       "description": "Chicken Katsu w/ Medium Drink",
       "price": "$7",
+      "value": 4,
       "timeStart": "2pm",
       "timeEnd": "4pm"
    },
@@ -16,6 +17,7 @@
       "category": "food",
       "description": "Student Discount Sandwich 50% Off",
       "price": "NA",
+      "value": 4,
       "timeStart": "3pm",
       "timeEnd": "5pm"
    },
@@ -26,6 +28,7 @@
       "category": "drink",
       "description": "",
       "price": "NA",
+      "value": 3,
       "timeStart": "8pm",
       "timeEnd": "12am"
    }

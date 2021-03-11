@@ -2,16 +2,19 @@
    {
       "id": 0,
       "name": "Tim's Hawaiian BBQ",
+      "phone": "",
       "url": "https://www.google.com/maps/place/Tim's+Hawaiian+BBQ/@38.5439982,-121.7475373,17z/data=!3m1!4b1!4m5!3m4!1s0x808529312a9e6c89:0x8241593018e9f926!8m2!3d38.5439982!4d-121.7453486"
    },
    {
       "id": 1,
       "name": "Ike's Sandwiches",
+      "phone": "",
       "url": "https://www.google.com/maps/place/Ike's+Sandwiches/@38.543935,-121.7419937,17z/data=!3m1!4b1!4m5!3m4!1s0x808529737968a1b3:0x86dba063f03e41fb!8m2!3d38.543935!4d-121.739805"
    },
    {
       "id": 2,
       "name": "WoodStocks",
+      "phone": "",
       "url": "https://www.google.com/maps/place/Woodstock's+Pizza+Davis/@38.5441776,-121.7415432,17z/data=!3m1!4b1!4m5!3m4!1s0x8085297383f12ded:0xe297b7fd3bc1f0e4!8m2!3d38.5441776!4d-121.7393545"
    }
 ]
