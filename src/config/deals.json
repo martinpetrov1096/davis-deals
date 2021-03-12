@@ -26,7 +26,7 @@
       "restaurantId": 2,
       "day": ["wednesday"],
       "category": "drink",
-      "description": "",
+      "description": "Buy 1 pint, 50% off the next one",
       "price": "NA",
       "value": 3,
       "timeStart": "8pm",

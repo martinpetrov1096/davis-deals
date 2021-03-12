@@ -19,7 +19,7 @@ export const dealProp = shape({
  * Phone number and url will be optional,
  * since some places might not have those
  */
-export const RestaurantProp = shape({
+export const restaurantProp = shape({
    id: number.isRequired,
    name: string.isRequired,
    phone: string,

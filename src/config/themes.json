@@ -1,0 +1,11 @@
+{
+   "food": {
+      "backgroundColor": "#FFFFF9",
+      "fontColor": "#000000"
+   },
+   "drink": {
+      "backgroundColor": "#263238",
+      "fontColor": "#FFFFFF"
+   }
+
+}

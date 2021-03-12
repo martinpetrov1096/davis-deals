@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import RestDeals from './rest-deals';
 import { dealProp } from '../utils/prop-types';
 
@@ -36,14 +37,14 @@ export default function DailyDeals({ day, deals }) {
          restDealDivs.push(<RestDeals key={restId} deals={restDeals[restId]}/>);
       }
       return restDealDivs;
-   }, []);
+   }, [deals]);
 
 
    return (
-      <div>
-         <h2>{day}</h2>
+      <Wrapper>
+         <DayTitle>{day}</DayTitle>
          { dealsByRestDivs }
-      </div>
+      </Wrapper>
    );
 }
 ////////////////////////////////////////////////////
@@ -54,3 +55,15 @@ DailyDeals.propTypes = {
    day: PropTypes.string,
    deals: PropTypes.arrayOf(dealProp)
 };
+////////////////////////////////////////////////////
+//////////////// STYLED COMPONENTS /////////////////
+////////////////////////////////////////////////////
+const Wrapper = styled.div`
+   margin: 50px 0;
+`;
+
+const DayTitle = styled.h2`
+   font-family: 'Baskervville', serif;
+   text-transform: capitalize;
+   text-align: center;
+`;
