@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import RestDeals from './rest-deals';
 import { dealProp } from '../utils/prop-types';
+import days from '../config/days.json';
 
 
 ////////////////////////////////////////////////////
@@ -39,10 +40,19 @@ export default function DailyDeals({ day, deals }) {
       return restDealDivs;
    }, [deals]);
 
+   const dayName = useMemo(() => {
+      const today = new Date().getDay();
+      if (days.indexOf(day) === today)
+         return 'today';
+      else if (days.indexOf(day) - 1 === today) 
+         return 'tomorrow';
+      else 
+         return day;
+   }, [day]);
 
    return (
       <Wrapper>
-         <DayTitle>{day}</DayTitle>
+         <DayTitle>{dayName + '\'s Deals'}</DayTitle>
          { dealsByRestDivs }
       </Wrapper>
    );
@@ -58,11 +68,19 @@ DailyDeals.propTypes = {
 ////////////////////////////////////////////////////
 //////////////// STYLED COMPONENTS /////////////////
 ////////////////////////////////////////////////////
+
 const Wrapper = styled.div`
-   margin: 50px 0;
+   width: 100%;
+   margin: 300px 0;
+
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
 `;
 
 const DayTitle = styled.h2`
+   margin-bottom: 30px;
+   font-size: min(120px, 15vw);
    font-family: 'Baskervville', serif;
    text-transform: capitalize;
    text-align: center;

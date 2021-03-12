@@ -31,5 +31,16 @@
       "value": 3,
       "timeStart": "8pm",
       "timeEnd": "12am"
+   },
+   {
+      "id": 3,
+      "restaurantId": 0,
+      "day": ["wednesday"],
+      "category": "food",
+      "description": "Testing the spacing of the deals with a longer deal",
+      "price": "$7",
+      "value": 4,
+      "timeStart": "2pm",
+      "timeEnd": "4pm"
    }
 ]

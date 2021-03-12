@@ -21,7 +21,10 @@ export default function RestDeals({ deals }) {
 
    return (
       <Wrapper>
-         <RestTitle>{restaurant.name}</RestTitle>
+         <RestWrapper>
+            <RestTitle>{restaurant.name}</RestTitle>
+            <PhoneNumber>{restaurant.phone}</PhoneNumber>
+         </RestWrapper>
          {dealDivs}
       </Wrapper>
    );
@@ -38,15 +41,34 @@ RestDeals.propTypes = {
 //////////////// STYLED COMPONENTS /////////////////
 ////////////////////////////////////////////////////
 const Wrapper = styled.div`
+   width: min(550px, 90%);
+   margin-top: 40px;
+
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+
+`;
+const RestWrapper = styled.div`
+   width: 100%;
+   font-family: 'Marcellus SC', serif;
+   margin-bottom: 20px;
+   border-bottom: solid 1px ${({theme}) => theme.fontColor};
+   padding-bottom: 5px;
+
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+
 
 `;
 
-const RestTitle = styled.h3`
-   font-family: 'Marcellus SC', serif;
 
+const RestTitle = styled.h3`
+   font-size: min(30px, 5vw);
 `;
 
 const PhoneNumber = styled.h4`
-
-
+   font-size: min(15px, 3.5vw);
 `;

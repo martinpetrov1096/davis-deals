@@ -18,12 +18,15 @@ export default function App() {
     * have the appropriate deals for each day
     */
    let dailyDealDivs = useMemo(() => {
+      const today = new Date().getDay();
+      const sortedDays = days.slice(today).concat(days.slice(0, today));
+
       const dailyDeals = {};
-      for (const day of days) {
+      for (const day of sortedDays) {
          dailyDeals[day] = deals.filter((deal) => (deal.day.includes(day) && deal.category === category));
       }
       console.log(dailyDeals['monday']);
-      return days.map((day) => <DailyDeals day={day} deals={dailyDeals[day]} key={day}/>);
+      return sortedDays.map((day) => <DailyDeals day={day} deals={dailyDeals[day]} key={day}/>);
    }, [category]);
 
 
@@ -45,6 +48,7 @@ const Wrapper = styled.div`
    width: 100%;
    height: max(auto, 100vh);
    background-color: ${({theme}) => theme.backgroundColor};
+   transition: all .5s ease-in-out;
    color: ${({theme}) => theme.fontColor};
 
    display: flex;
