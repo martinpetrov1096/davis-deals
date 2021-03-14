@@ -5,8 +5,8 @@ import deals from './config/deals.json';
 import days from './config/days.json';
 import theme from './config/themes.json';
 import DailyDeals from './components/daily-deals';
-import logoLight from './config/logo-light.svg';
-import logoDark from './config/logo-dark.svg';
+import Logo from './components/logo';
+
 
 ////////////////////////////////////////////////////
 //////////////////// COMPONENT /////////////////////
@@ -36,7 +36,7 @@ export default function App() {
    return (
       <ThemeProvider theme={theme[category]}>
          <Wrapper>
-            <Logo/>
+            <Logo category={category}/>
             <Button checked={category === 'drink'} onChange={(drink) => drink ? setCategory('drink') : setCategory('food') }/>
             { dailyDealDivs }
          </Wrapper>
@@ -51,21 +51,13 @@ const Wrapper = styled.div`
    width: 100%;
    height: max(auto, 100vh);
    background-color: ${({theme}) => theme.backgroundColor};
-   transition: all .5s ease-in-out;
+   transition: ${({theme}) => theme.transition};
    color: ${({theme}) => theme.fontColor};
 
    display: flex;
    flex-flow: column;
    justify-content: center;
    align-items: center;
-`;
-
-const Logo = styled.img.attrs(props => ({
-   src: props.theme.theme === 'light' ? logoLight : logoDark,
-   // or we can define dynamic ones
-}))`
-   width: min(80%, 800px);
-   margin-top: 20px;
 `;
 
 const Button = styled(Switch).attrs(props => ({

@@ -3,13 +3,15 @@
       "theme": "light",
       "backgroundColor": "#FFFFF9",
       "fontColor": "#000000",
-      "buttonBg": "#D4D6E5"
+      "buttonBg": "#D4D6E5",
+      "transition": "all .5s ease-in-out"
    },
    "drink": {
       "theme": "dark",
       "backgroundColor": "#000000",
       "fontColor": "#FFFFFF",
-      "buttonBg": "#D4D6E5"
+      "buttonBg": "#D4D6E5",
+      "transition": "all .5s ease-in-out"
    }
 
 }
