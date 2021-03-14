@@ -52,7 +52,7 @@ export default function DailyDeals({ day, deals }) {
 
    return (
       <Wrapper>
-         <DayTitle>{dayName + '\'s Deals'}</DayTitle>
+         <DayTitle>{dayName}</DayTitle>
          { dealsByRestDivs }
       </Wrapper>
    );
@@ -71,7 +71,7 @@ DailyDeals.propTypes = {
 
 const Wrapper = styled.div`
    width: 100%;
-   margin: 300px 0;
+   margin: 0 0 300px 0;
 
    display: flex;
    flex-flow: column nowrap;

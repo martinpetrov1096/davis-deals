@@ -1,9 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import Switch from 'react-switch';
 import deals from './config/deals.json';
 import days from './config/days.json';
 import theme from './config/themes.json';
 import DailyDeals from './components/daily-deals';
+import logoLight from './config/logo-light.svg';
+import logoDark from './config/logo-dark.svg';
 
 ////////////////////////////////////////////////////
 //////////////////// COMPONENT /////////////////////
@@ -33,9 +36,9 @@ export default function App() {
    return (
       <ThemeProvider theme={theme[category]}>
          <Wrapper>
+            <Logo/>
+            <Button checked={category === 'drink'} onChange={(drink) => drink ? setCategory('drink') : setCategory('food') }/>
             { dailyDealDivs }
-            <input type="radio" value="food" name="category" checked={category === 'food'} onChange={(e) => setCategory(e.target.value)} />
-            <input type="radio" value="drink" name="category" checked={category === 'drink'} onChange={(e) => setCategory(e.target.value)}/>  
          </Wrapper>
       </ThemeProvider>
    );
@@ -55,5 +58,33 @@ const Wrapper = styled.div`
    flex-flow: column;
    justify-content: center;
    align-items: center;
+`;
+
+const Logo = styled.img.attrs(props => ({
+   src: props.theme.theme === 'light' ? logoLight : logoDark,
+   // or we can define dynamic ones
+}))`
+   width: min(80%, 800px);
+   margin-top: 20px;
+`;
+
+const Button = styled(Switch).attrs(props => ({
+   checkedIcon: false,
+   uncheckedIcon: false,
+   // boxShadow: '0 4px 4px #000000',
+   offColor: props.theme.buttonBg,
+   onColor: props.theme.buttonBg,
+   offHandleColor: props.theme.fontColor,
+   onHandleColor: props.theme.fontColor,
+   width: 50,
+   height: 22,
+   handleDiameter: 26
+}))`
+   margin: 40px 0;
+   padding: 0;
+
+   > .react-switch-bg {
+      /* box-shadow: inset 0 2px 2px #000000; */
+   }
 
 `;

@@ -1,11 +1,15 @@
 {
    "food": {
+      "theme": "light",
       "backgroundColor": "#FFFFF9",
-      "fontColor": "#000000"
+      "fontColor": "#000000",
+      "buttonBg": "#D4D6E5"
    },
    "drink": {
+      "theme": "dark",
       "backgroundColor": "#000000",
-      "fontColor": "#FFFFFF"
+      "fontColor": "#FFFFFF",
+      "buttonBg": "#D4D6E5"
    }
 
 }
