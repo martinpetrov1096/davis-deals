@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/davis-deals/static/css/main.41da36fc.chunk.css",
-    "main.js": "/davis-deals/static/js/main.03030738.chunk.js",
-    "main.js.map": "/davis-deals/static/js/main.03030738.chunk.js.map",
+    "main.js": "/davis-deals/static/js/main.78a81ad2.chunk.js",
+    "main.js.map": "/davis-deals/static/js/main.78a81ad2.chunk.js.map",
     "runtime-main.js": "/davis-deals/static/js/runtime-main.0cefd463.js",
     "runtime-main.js.map": "/davis-deals/static/js/runtime-main.0cefd463.js.map",
-    "static/js/2.30054898.chunk.js": "/davis-deals/static/js/2.30054898.chunk.js",
-    "static/js/2.30054898.chunk.js.map": "/davis-deals/static/js/2.30054898.chunk.js.map",
+    "static/js/2.61edc812.chunk.js": "/davis-deals/static/js/2.61edc812.chunk.js",
+    "static/js/2.61edc812.chunk.js.map": "/davis-deals/static/js/2.61edc812.chunk.js.map",
     "index.html": "/davis-deals/index.html",
     "static/css/main.41da36fc.chunk.css.map": "/davis-deals/static/css/main.41da36fc.chunk.css.map",
-    "static/js/2.30054898.chunk.js.LICENSE.txt": "/davis-deals/static/js/2.30054898.chunk.js.LICENSE.txt"
+    "static/js/2.61edc812.chunk.js.LICENSE.txt": "/davis-deals/static/js/2.61edc812.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0cefd463.js",
-    "static/js/2.30054898.chunk.js",
+    "static/js/2.61edc812.chunk.js",
     "static/css/main.41da36fc.chunk.css",
-    "static/js/main.03030738.chunk.js"
+    "static/js/main.78a81ad2.chunk.js"
   ]
 }
