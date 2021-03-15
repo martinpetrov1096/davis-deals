@@ -1,0 +1,10 @@
+<svg width="102" height="100" viewBox="0 0 102 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M51 63L102 22H0L51 63Z" fill="black"/>
+<path d="M51 63L96 27H6L51 63Z" fill="white"/>
+<path d="M51 63L89.1051 32.25H12.8949L51 63Z" fill="black"/>
+<path d="M51 58V100" stroke="black" stroke-width="4"/>
+<line x1="38.4856" y1="42.8854" x2="17.0441" y2="1.06121" stroke="black" stroke-width="2"/>
+<circle cx="17" cy="1" r="1" fill="black"/>
+<ellipse cx="23" cy="12.5" rx="4" ry="4.5" fill="black"/>
+<rect x="29" y="96" width="44" height="4" rx="1" fill="black"/>
+</svg>

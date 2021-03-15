@@ -24,6 +24,14 @@ export default function RestDeals({ deals }) {
          <RestWrapper>
             <RestTitle>{restaurant.name}</RestTitle>
             <PhoneNumber>{restaurant.phone}</PhoneNumber>
+            <a href={restaurant.url} target="_blank" rel="noopener noreferrer">
+               <RestLocSVG light={deals[0].category === 'food'}  width="119" height="161" viewBox="0 0 119 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="60" cy="58" r="44" className="fill"/>
+                  <path d="M60.0001 148L98 80H22L60.0001 148Z" className="fill"/>
+                  <circle cx="60" cy="58" r="20" className="fillOpposite"/>
+               </RestLocSVG>
+            </a>
+
          </RestWrapper>
          {dealDivs}
       </Wrapper>
@@ -55,20 +63,37 @@ const RestWrapper = styled.div`
    margin-bottom: 20px;
    border-bottom: solid 1px ${({theme}) => theme.fontColor};
    padding-bottom: 5px;
-
    display: flex;
    flex-flow: row wrap;
    align-items: center;
    justify-content: space-between;
-
-
 `;
-
-
 const RestTitle = styled.h3`
    font-size: min(30px, 5vw);
 `;
-
 const PhoneNumber = styled.h4`
    font-size: min(15px, 3.5vw);
+`;
+const RestLocSVG = styled.svg`
+   width: 30px;
+   height: 30px;
+
+   > .fill {
+      transition: ${({theme}) => theme.transition};
+      fill: ${({light}) => light ? 'black' : 'white'};
+
+   }
+   > .fillOpposite {
+      transition: ${({theme}) => theme.transition};
+      fill: ${({light}) => light ? 'white' : 'black'};
+   }
+
+   :hover {
+      .fill {
+         transition: none;
+         fill: #90a4ae;
+      }
+
+
+   }
 `;
