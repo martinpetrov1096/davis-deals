@@ -5,8 +5,9 @@ import deals from './config/deals.json';
 import days from './config/days.json';
 import theme from './config/themes.json';
 import DailyDeals from './components/daily-deals';
-import Logo from './components/logo';
+import Logo from './components/title';
 import CategorySlider from './components/category-slider';
+import ScrollTopBtn from './components/scroll-top-btn';
 
 ////////////////////////////////////////////////////
 //////////////////// COMPONENT /////////////////////
@@ -32,14 +33,9 @@ export default function App() {
    }, [category]);
 
    const changeCategory = useCallback((newCategory) => {
-
-      if (newCategory !== 'drink' && newCategory !== 'food') 
-         return;
-
+      if (newCategory !== 'drink' && newCategory !== 'food') return;
       setCategory(newCategory);
    });
-
-
 
 
    return (
@@ -47,9 +43,9 @@ export default function App() {
          <Wrapper>
             <Logo category={category}/>
             <CategorySlider changeCategory={changeCategory} category={category}/>
-            {/* <Button checked={category === 'drink'} onChange={(drink) => drink ? setCategory('drink') : setCategory('food') }/> */}
             { dailyDealDivs }
          </Wrapper>
+         <ScrollTopBtn category={category}/>
       </ThemeProvider>
    );
 }
@@ -63,30 +59,8 @@ const Wrapper = styled.div`
    background-color: ${({theme}) => theme.backgroundColor};
    transition: ${({theme}) => theme.transition};
    color: ${({theme}) => theme.fontColor};
-
    display: flex;
    flex-flow: column;
    justify-content: center;
    align-items: center;
 `;
-
-// const Button = styled(Switch).attrs(props => ({
-//    checkedIcon: false,
-//    uncheckedIcon: false,
-//    // boxShadow: '0 4px 4px #000000',
-//    offColor: props.theme.buttonBg,
-//    onColor: props.theme.buttonBg,
-//    offHandleColor: props.theme.fontColor,
-//    onHandleColor: props.theme.fontColor,
-//    width: 50,
-//    height: 22,
-//    handleDiameter: 26
-// }))`
-//    margin: 40px 0;
-//    padding: 0;
-
-//    > .react-switch-bg {
-//       /* box-shadow: inset 0 2px 2px #000000; */
-//    }
-
-// `;

@@ -51,7 +51,7 @@ CategorySlider.propTypes = {
 ////////////////////////////////////////////////////
 const Wrapper = styled.div`
    width: min(90%, 150px);
-
+   margin-bottom: 50px;
    display: flex;
    flex-flow: row nowrap;
    align-items: center;
