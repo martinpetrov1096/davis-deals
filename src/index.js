@@ -4,10 +4,10 @@ import App from './App';
 import './styles/reset.css';
 import './styles/index.css';
 
+
 ReactDOM.render(
    <React.StrictMode>
       <App /> 
    </React.StrictMode>,
    document.getElementById('root')
 );
-

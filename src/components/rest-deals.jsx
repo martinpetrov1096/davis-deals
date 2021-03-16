@@ -19,6 +19,7 @@ export default function RestDeals({ deals }) {
    const restaurant = useMemo(() => 
       restaurants.find((rest) => rest.id === deals[0]?.restaurantId));
 
+
    return (
       <Wrapper>
          <RestWrapper>
@@ -31,7 +32,6 @@ export default function RestDeals({ deals }) {
                   <circle cx="60" cy="58" r="20" className="fillOpposite"/>
                </RestLocSVG>
             </a>
-
          </RestWrapper>
          {dealDivs}
       </Wrapper>
@@ -44,18 +44,15 @@ export default function RestDeals({ deals }) {
 RestDeals.propTypes = {
    deals: PropTypes.arrayOf(dealProp)
 };
-
 ////////////////////////////////////////////////////
 //////////////// STYLED COMPONENTS /////////////////
 ////////////////////////////////////////////////////
 const Wrapper = styled.div`
    width: min(550px, 90%);
    margin-top: 40px;
-
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
-
 `;
 const RestWrapper = styled.div`
    width: 100%;
@@ -77,23 +74,18 @@ const PhoneNumber = styled.h4`
 const RestLocSVG = styled.svg`
    width: 30px;
    height: 30px;
-
    > .fill {
       transition: ${({theme}) => theme.transition};
       fill: ${({light}) => light ? 'black' : 'white'};
-
    }
    > .fillOpposite {
       transition: ${({theme}) => theme.transition};
       fill: ${({light}) => light ? 'white' : 'black'};
    }
-
    :hover {
       .fill {
          transition: none;
          fill: #90a4ae;
       }
-
-
    }
 `;

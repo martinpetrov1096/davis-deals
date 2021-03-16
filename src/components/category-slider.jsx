@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Switch from 'react-switch';
 
+
 ////////////////////////////////////////////////////
 //////////////////// COMPONENT /////////////////////
 ////////////////////////////////////////////////////
@@ -49,6 +50,7 @@ CategorySlider.propTypes = {
 ////////////////////////////////////////////////////
 //////////////// STYLED COMPONENTS /////////////////
 ////////////////////////////////////////////////////
+
 const Wrapper = styled.div`
    width: min(90%, 150px);
    margin-bottom: 50px;
@@ -57,8 +59,6 @@ const Wrapper = styled.div`
    align-items: center;
    justify-content: space-between;
 `;
-
-
 const Toggle = styled(Switch).attrs(props => ({
    checkedIcon: false,
    uncheckedIcon: false,
@@ -76,12 +76,10 @@ const Toggle = styled(Switch).attrs(props => ({
 const IconSVG = styled.svg`
    width: 30px;
    height: 30px;
-   
    > .fill {
       transition: ${({theme}) => theme.transition};
       fill: ${({light}) => light ? 'black' : 'white'};
    }
-
    > .fillOpposite {
       transition: ${({theme}) => theme.transition};
       fill: ${({light}) => light ? 'white' : 'black'};
@@ -96,5 +94,4 @@ const IconSVG = styled.svg`
       stroke: ${({light}) => light ? 'white' : 'black'};
       fill: none;
    }
-
 `;

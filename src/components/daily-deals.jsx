@@ -50,6 +50,7 @@ export default function DailyDeals({ day, deals }) {
          return day;
    }, [day]);
 
+
    return (
       <Wrapper>
          <DayTitle>{dayName}</DayTitle>
@@ -72,12 +73,10 @@ DailyDeals.propTypes = {
 const Wrapper = styled.div`
    width: 100%;
    margin: 0 0 300px 0;
-
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
 `;
-
 const DayTitle = styled.h2`
    margin-bottom: 30px;
    font-size: min(120px, 15vw);

@@ -1,6 +1,5 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-
 import deals from './config/deals.json';
 import days from './config/days.json';
 import theme from './config/themes.json';
@@ -8,6 +7,7 @@ import DailyDeals from './components/daily-deals';
 import Logo from './components/title';
 import CategorySlider from './components/category-slider';
 import ScrollTopBtn from './components/scroll-top-btn';
+
 
 ////////////////////////////////////////////////////
 //////////////////// COMPONENT /////////////////////

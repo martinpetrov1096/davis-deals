@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+
 ////////////////////////////////////////////////////
 //////////////////// COMPONENT /////////////////////
 ////////////////////////////////////////////////////
@@ -56,9 +57,6 @@ const ScrollBtn = styled.svg`
    height: 75px;
    border-radius: 100%;
    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-
-
-
    display: ${({hidden}) => hidden ? 'none' : 'block'};
    > .fill {
       transition: ${({theme}) => theme.transition};
