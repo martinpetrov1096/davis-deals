@@ -2,13 +2,13 @@
    {
       "id": 0,
       "name": "Tim's Hawaiian BBQ",
-      "phone": "(310)-916-3243",
+      "phone": "530-564-7368",
       "url": "https://www.google.com/maps/place/Tim's+Hawaiian+BBQ/@38.5439982,-121.7475373,17z/data=!3m1!4b1!4m5!3m4!1s0x808529312a9e6c89:0x8241593018e9f926!8m2!3d38.5439982!4d-121.7453486"
    },
    {
       "id": 1,
       "name": "Ike's Sandwiches",
-      "phone": "(310)-916-3243",
+      "phone": "530-746-2525",
       "url": "https://www.google.com/maps/place/Ike's+Sandwiches/@38.543935,-121.7419937,17z/data=!3m1!4b1!4m5!3m4!1s0x808529737968a1b3:0x86dba063f03e41fb!8m2!3d38.543935!4d-121.739805"
    },
    {
@@ -19,8 +19,20 @@
    },
    {
       "id": 3,
-      "name": "Froggy's / Tommy J's Grill & Catering",
-      "phone": "",
-      "url": ""
+      "name": "Froggy's",
+      "phone": "530-758-7550",
+      "url": "https://www.google.com/maps/place/Froggy's/@38.5434022,-121.7411706,17z/data=!3m1!4b1!4m5!3m4!1s0x808529739eb69bdd:0x174d073b048699d0!8m2!3d38.5434022!4d-121.7389819"
+   },
+   {
+      "id": 4,
+      "name": "Red 88 Noodle Bar",
+      "phone": "530-758-7338",
+      "url": "https://www.google.com/maps/place/Red+88+Noodle+Bar/@38.544338,-121.7414487,17z/data=!3m1!5s0x8085297380502087:0x7f5177f121a42404!4m12!1m6!3m5!1s0x808529738127523b:0xde1ae49caf368d3b!2sRed+88+Noodle+Bar!8m2!3d38.544338!4d-121.73926!3m4!1s0x808529738127523b:0xde1ae49caf368d3b!8m2!3d38.544338!4d-121.73926"
+   },
+   {
+      "id": 5,
+      "name": "Togo's",
+      "phone": "530-750-2625",
+      "url": "https://www.google.com/maps/place/TOGO'S+Sandwiches/@38.5444076,-121.9002923,11z/data=!3m1!5s0x808529cacb2d1a1b:0x6240f16ecc03802c!4m8!1m2!2m1!1stogos!3m4!1s0x808528354dbccedd:0xc0ddc5807753ac39!8m2!3d38.562373!4d-121.765879"
    }
 ]

@@ -15,7 +15,7 @@
       "restaurantId": 1,
       "day": ["monday", "tuesday","wednesday", "thursday", "friday"],
       "category": "food",
-      "description": "Student Discount Sandwich 50% Off",
+      "description": "Any Sandwich 50% Off [Students Only]",
       "price": "NA",
       "value": 4,
       "timeStart": "3pm",
@@ -31,5 +31,82 @@
       "value": 3,
       "timeStart": "8pm",
       "timeEnd": "12am"
+   },
+   {
+      "id": 4,
+      "restaurantId": 0,
+      "day": ["monday"],
+      "category": "food",
+      "description": "Fish & Chips w/ Medium Drink",
+      "price": "$8",
+      "value": 4,
+      "timeStart": "2pm",
+      "timeEnd": "4pm"
+   },
+   {
+      "id": 5,
+      "restaurantId": 5,
+      "day": ["monday"],
+      "category": "food",
+      "description": "Regular Pastrami/Pretzelrami Sandwich & 20oz Fountain Drink",
+      "price": "$6.95",
+      "value": 3,
+      "timeStart": "10am",
+      "timeEnd": "7pm"
+   },
+   {
+      "id": 6,
+      "restaurantId": 5,
+      "day": ["tuesday"],
+      "category": "food",
+      "description": "Regular Ham & Swiss Sandwich & 20oz Fountain Drink",
+      "price": "$6.95",
+      "value": 3,
+      "timeStart": "10am",
+      "timeEnd": "7pm"
+   },
+   {
+      "id": 7,
+      "restaurantId": 5,
+      "day": ["wednesday"],
+      "category": "food",
+      "description": "Regular Italian Sandwich & 20oz Fountain Drink",
+      "price": "$6.95",
+      "value": 3,
+      "timeStart": "10am",
+      "timeEnd": "7pm"
+   },
+   {
+      "id": 8,
+      "restaurantId": 5,
+      "day": ["thursday"],
+      "category": "food",
+      "description": "Regular Roast Beef Sandwich & 20oz Fountain Drink",
+      "price": "$6.95",
+      "value": 3,
+      "timeStart": "10am",
+      "timeEnd": "7pm"
+   },
+   {
+      "id": 9,
+      "restaurantId": 5,
+      "day": ["friday"],
+      "category": "food",
+      "description": "Regular Albacore Tuna Sandwich & 20oz Fountain Drink",
+      "price": "$6.95",
+      "value": 3,
+      "timeStart": "10am",
+      "timeEnd": "7pm"
+   },
+   {
+      "id": 10,
+      "restaurantId": 3,
+      "day": ["saturday", "sunday"],
+      "category": "drink",
+      "description": "Bottomless Mimosas",
+      "price": "$8.95",
+      "value": 4,
+      "timeStart": "9am",
+      "timeEnd": "2pm"
    }
 ]
