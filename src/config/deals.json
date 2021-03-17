@@ -108,5 +108,49 @@
       "value": 4,
       "timeStart": "9am",
       "timeEnd": "2pm"
+   },
+   {
+      "id": 11,
+      "restaurantId": 2,
+      "day": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+      "category": "food",
+      "description": "All You Can Eat Pizza",
+      "price": "$9.95",
+      "value": 4,
+      "timeStart": "11am",
+      "timeEnd": "12am"
+   },
+   {
+      "id": 12,
+      "restaurantId": 2,
+      "day": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+      "category": "food",
+      "description": "Slice of Pizza & a Drink, add $1 for Combo Pizza",
+      "price": "$5.95",
+      "value": 4,
+      "timeStart": "11am",
+      "timeEnd": "12am"
+   },
+   {
+      "id": 13,
+      "restaurantId": 2,
+      "day": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+      "category": "food",
+      "description": "Slice of Pizza, Salad, & a Drink, add $1 for Combo Pizza",
+      "price": "$9.95",
+      "value": 4,
+      "timeStart": "11am",
+      "timeEnd": "12am"
+   },
+   {
+      "id": 14,
+      "restaurantId": 2,
+      "day": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+      "category": "drink",
+      "description": "Happy Hour",
+      "price": "NA",
+      "value": 2,
+      "timeStart": "9pm",
+      "timeEnd": "12am"
    }
 ]

@@ -4,6 +4,7 @@
       "backgroundColor": "#FFFFF9",
       "fontColor": "#000000",
       "buttonBg": "#D4D6E5",
+      "highlightColor": "#FFFF00",
       "transition": "all .5s ease-in-out"
    },
    "drink": {
@@ -11,6 +12,7 @@
       "backgroundColor": "#000000",
       "fontColor": "#FFFFFF",
       "buttonBg": "#D4D6E5",
+      "highlightColor": "#FFFFF0",
       "transition": "all .5s ease-in-out"
    }
 }

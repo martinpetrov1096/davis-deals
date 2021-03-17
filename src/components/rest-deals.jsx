@@ -24,14 +24,19 @@ export default function RestDeals({ deals }) {
       <Wrapper>
          <RestWrapper>
             <RestTitle>{restaurant.name}</RestTitle>
-            <PhoneNumber>{restaurant.phone}</PhoneNumber>
-            <a href={restaurant.url} target="_blank" rel="noopener noreferrer">
-               <RestLocSVG light={deals[0].category === 'food'}  width="119" height="161" viewBox="0 0 119 161" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="60" cy="58" r="44" className="fill"/>
-                  <path d="M60.0001 148L98 80H22L60.0001 148Z" className="fill"/>
-                  <circle cx="60" cy="58" r="20" className="fillOpposite"/>
-               </RestLocSVG>
-            </a>
+            <AboutWrapper>
+               <Link href={'tel:'+ restaurant.phone}>
+                  <PhoneNumber >{restaurant.phone}</PhoneNumber>
+               </Link>
+               <Link href={restaurant.url} target="_blank" rel="noopener noreferrer">
+                  <RestLocSVG light={deals[0].category === 'food'}  width="119" height="161" viewBox="0 0 119 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <circle cx="60" cy="58" r="44" className="fill"/>
+                     <path d="M60.0001 148L98 80H22L60.0001 148Z" className="fill"/>
+                     <circle cx="60" cy="58" r="20" className="fillOpposite"/>
+                  </RestLocSVG>
+               </Link>
+            </AboutWrapper>
+
          </RestWrapper>
          {dealDivs}
       </Wrapper>
@@ -48,7 +53,7 @@ RestDeals.propTypes = {
 //////////////// STYLED COMPONENTS /////////////////
 ////////////////////////////////////////////////////
 const Wrapper = styled.div`
-   width: min(550px, 90%);
+   width: min(600px, 90%);
    margin-top: 40px;
    display: flex;
    flex-flow: column nowrap;
@@ -68,8 +73,28 @@ const RestWrapper = styled.div`
 const RestTitle = styled.h3`
    font-size: min(30px, 5vw);
 `;
+const Link = styled.a`
+   color: ${({theme}) => theme.fontColor};
+   text-decoration: none;
+   :hover {
+      color: #90a4ae;
+      .fill {
+         transition: none;
+         fill: #90a4ae;
+      }
+   }
+`;
+const AboutWrapper = styled.div`
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: flex-end;
+   align-items: center;
+`;
+
 const PhoneNumber = styled.h4`
+   margin-right: 10px;
    font-size: min(15px, 3.5vw);
+   
 `;
 const RestLocSVG = styled.svg`
    width: 30px;
