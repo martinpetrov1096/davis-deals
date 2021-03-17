@@ -45,7 +45,7 @@ export default function App() {
             <CategorySlider changeCategory={changeCategory} category={category}/>
             { dailyDealDivs }
          </Wrapper>
-         {/* <ScrollTopBtn category={category}/> */}
+         <ScrollTopBtn category={category}/>
       </ThemeProvider>
    );
 }

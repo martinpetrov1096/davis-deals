@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 
@@ -11,24 +11,26 @@ export default function ScrollTopBtn({ category }) {
 
    const [hidden, setHidden] = useState(false);
 
+
+
    const scrollHome = useCallback(() => {
       document.getElementById('title').scrollIntoView({
          behavior: 'smooth',
          block: 'start',
-         inline: 'nearest'
       });
-
    }, []);
+   const checkHidden = () => {
+      if (window.pageYOffset > 300 && hidden) {
+         setHidden(() => false);
+      } else if (window.pageYOffset <= 300 && !hidden) {
+         setHidden((prevVal) => true);
+      }
+   };
+   useEffect(() => {
+      window.addEventListener('scroll', checkHidden);
+      return () => window.removeEventListener('scroll', checkHidden);
+   });
 
-   // useEffect(() => {
-   //    window.addEventListener('scroll', (e) => {
-   //       if (window.pageYOffset > 300 && hidden) {
-   //          setHidden(() => false);
-   //       } else if (window.pageYOffset <= 300 && !hidden) {
-   //          setHidden((prevVal) => true);
-   //       }
-   //    });
-   // }, []);
 
    return (
       <ScrollBtn onClick={() => scrollHome()} light={category === 'food'} hidden={hidden} width="100" height="100" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,17 +49,23 @@ ScrollTopBtn.propTypes = {
 ////////////////////////////////////////////////////
 //////////////// STYLED COMPONENTS /////////////////
 ////////////////////////////////////////////////////
+const slideUp = keyframes`
+   from {
+      transform: translateY(100px);
+   }
+`;
 
 const ScrollBtn = styled.svg`
    position: fixed;
-   bottom: 0;
-   right: 0;
-   margin: 0 40px 40px 0;
+   bottom: 40px;
+   right: 40px;
    width: 75px;
    height: 75px;
    border-radius: 100%;
-   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
    display: ${({hidden}) => hidden ? 'none' : 'block'};
+   animation: ${slideUp} .3s ease-out;
+   cursor: pointer;
+
    > .fill {
       transition: ${({theme}) => theme.transition};
       fill: ${({light}) => light ? 'black' : 'white'};
@@ -67,4 +75,18 @@ const ScrollBtn = styled.svg`
       stroke: ${({light}) => light ? 'white' : 'black'};
       fill: none;
    }
+   transition: all .2s ease-in-out;
+   :hover {
+      transform: scale(1.05);
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+   }
+
+   @media screen and (max-width: 400px) { 
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+   }
 `;
+
