@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 
 export default function ScrollTopBtn({ category }) {
 
-   const [hidden, setHidden] = useState(false);
+   const [hidden, setHidden] = useState(true);
 
 
 
