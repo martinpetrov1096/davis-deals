@@ -152,5 +152,60 @@
       "value": 2,
       "timeStart": "9pm",
       "timeEnd": "12am"
+   },
+   {
+      "id": 15,
+      "restaurantId": 2,
+      "day": ["friday"],
+      "category": "drink",
+      "description": "Domestic Beer + Jameson/Jack/Fireball/Espolon",
+      "price": "$6",
+      "value": 4,
+      "timeStart": "11am",
+      "timeEnd": "12am"
+   },
+   {
+      "id": 16,
+      "restaurantId": 0,
+      "day": ["tuesday"],
+      "category": "food",
+      "description": "BBQ Chicken Plate w/ Medium Drink",
+      "price": "$8",
+      "value": 4,
+      "timeStart": "2pm",
+      "timeEnd": "4pm"
+   },
+   {
+      "id": 17,
+      "restaurantId": 6,
+      "day": ["saturday, sunday"],
+      "category": "drink",
+      "description": "Puppie Hours, $1 off all beers, when you bring your dog",
+      "price": "NA",
+      "value": 2,
+      "timeStart": "12pm",
+      "timeEnd": "5pm"
+   },
+   {
+      "id": 18,
+      "restaurantId": 6,
+      "day": ["monday"],
+      "category": "drink",
+      "description": "Moonie Monday, $3 moonies all day",
+      "price": "$3",
+      "value": 3,
+      "timeStart": "12pm",
+      "timeEnd": "10pm"
+   },
+   {
+      "id": 19,
+      "restaurantId": 7,
+      "day": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+      "category": "food",
+      "description": "Munchie Meal (Burger, Fries, 2 Tacos, & Medium Drink) ",
+      "price": "$7",
+      "value": 2,
+      "timeStart": "9pm",
+      "timeEnd": "3am"
    }
 ]

@@ -34,5 +34,17 @@
       "name": "Togo's",
       "phone": "530-750-2625",
       "url": "https://www.google.com/maps/place/TOGO'S+Sandwiches/@38.5444076,-121.9002923,11z/data=!3m1!5s0x808529cacb2d1a1b:0x6240f16ecc03802c!4m8!1m2!2m1!1stogos!3m4!1s0x808528354dbccedd:0xc0ddc5807753ac39!8m2!3d38.562373!4d-121.765879"
+   },
+   {
+      "id": 6,
+      "name": "University of Beer",
+      "phone": "530-759-1990",
+      "url": "https://www.google.com/maps/place/University+of+Beer+-+Davis,+CA/@38.5448575,-121.7428308,17z/data=!3m1!4b1!4m5!3m4!1s0x80852974912c8e71:0x2d824ab74049159f!8m2!3d38.5448575!4d-121.7406421"
+   },
+   {
+      "id": 7,
+      "name": "Jack in the Box",
+      "phone": "530-297-0400",
+      "url": "https://www.google.com/maps/place/Jack+in+the+Box/@38.5441776,-121.7415432,17z/data=!4m8!1m2!2m1!1sFood!3m4!1s0x80852974f82b5257:0xbc87bfd0042a1c17!8m2!3d38.5458562!4d-121.7398036"
    }
 ]
