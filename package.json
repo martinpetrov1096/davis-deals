@@ -1,7 +1,7 @@
 {
   "name": "davis-deals",
   "homepage": "https://martinpetrov1096.github.io/davis-deals/",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^17.0.1",
