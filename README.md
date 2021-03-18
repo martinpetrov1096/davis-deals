@@ -1,5 +1,5 @@
 # [Davis Deals](https://martinpetrov1096.github.io/davis-deals/)
-<img width="100%" src='./external-assets/demo.gif'/>
+
 <div>
   <img src='https://img.shields.io/github/package-json/v/martinpetrov1096/davis-deals'>
   <img src='https://img.shields.io/github/deployments/martinpetrov1096/davis-deals/github-pages'>
@@ -8,6 +8,7 @@
   <img src='https://img.shields.io/github/last-commit/martinpetrov1096/davis-deals'>
   <img src='https://img.shields.io/badge/Dining-green'>
 </div>
+<img style="border-radius: 10px;" width="100%" src='./external-assets/demo.gif'/>
 
 ## Description 
 Davis Deals is a simple web application that lists out all the weekly restuarant and bar deals in Davis, CA. 
