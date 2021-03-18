@@ -3,14 +3,20 @@
    <head>
 
       <meta charset="utf-8" />
-      <link rel="icon" media="(prefers-color-scheme:dark)" href="%PUBLIC_URL%/icons/favicon-dark-196.png" type="image/png" />
-      <link rel="icon" media="(prefers-color-scheme:light)" href="%PUBLIC_URL%/icons/favicon-light-196.png" type="image/png" />
+     
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
       <meta
          name="description"
          content="A list of all of the local food and beverage deals and discounts in Davis, CA sorted by day"
       />
+      <!-- The following 2 lines allow the favicon to switch from the dark icon to the light icon depending on the browser theme -->
+      <script src="https://unpkg.com/favicon-switcher@1.2.2/dist/index.umd.js" crossorigin="anonymous" type="application/javascript"></script>
+      <script>faviconSwitcher()</script>
+      <link rel="icon" media="(prefers-color-scheme:dark)" href="%PUBLIC_URL%/icons/favicon-dark-196.png" type="image/png" />
+      <link rel="icon" media="(prefers-color-scheme:light)" href="%PUBLIC_URL%/icons/favicon-light-196.png" type="image/png" />
+
+      <!-- The following are just the apple pwa app icon/ startup splash screen images -->
       <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/apple-icon-180.png">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/icons/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -39,12 +45,6 @@
       <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
       <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
       <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-
-      <!-- The following 2 lines allow the favicon to switch from the dark icon to the light icon depending on the browser theme -->
-      <script src="https://unpkg.com/favicon-switcher@1.2.2/dist/index.umd.js" crossorigin="anonymous" type="application/javascript"></script>
-      <script>faviconSwitcher()</script>
-      
-      
 
       <title>Davis Deals</title>
    </head>
