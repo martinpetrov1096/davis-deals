@@ -4,7 +4,7 @@
   <img src='https://img.shields.io/github/package-json/v/martinpetrov1096/davis-deals'>
   <img src='https://img.shields.io/github/deployments/martinpetrov1096/davis-deals/github-pages'>
   <img src='https://img.shields.io/badge/React-v16.4.1-blue'>
-  <img src='https://img.shields.io/github/languages/top/rdey0/raphunt'>
+  <img src='https://img.shields.io/github/languages/top/martinpetrov1096/davis-deals'>
   <img src='https://img.shields.io/github/last-commit/martinpetrov1096/davis-deals'>
   <img src='https://img.shields.io/badge/Dining-green'>
 </div>
