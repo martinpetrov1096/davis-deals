@@ -1,5 +1,5 @@
 # [Davis Deals](https://martinpetrov1096.github.io/davis-deals/)
-<img width="100%" src='./external-assets/logo-light.svg'/>
+<img width="100%" src='./external-assets/demo.gif'/>
 <div>
   <img src='https://img.shields.io/github/package-json/v/martinpetrov1096/davis-deals'>
   <img src='https://img.shields.io/github/deployments/martinpetrov1096/davis-deals/github-pages'>
